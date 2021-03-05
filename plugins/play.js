@@ -22,7 +22,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = /^play?$/i
 
 handler.exp = 0
 handler.limit = true
