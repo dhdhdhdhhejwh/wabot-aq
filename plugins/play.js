@@ -22,9 +22,17 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = /^( play | play2 |\?)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
 
-handler.exp = 0
+handler.admin = false
+handler.botAdmin = false
+
+handler.exp = 300
 handler.limit = true
 
 module.exports = handler
